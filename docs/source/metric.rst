@@ -6,8 +6,8 @@ Asset Diagram:
 
 .. image:: asset_diagram.png
    :alt: optional alt text
-   :height: 300px
-   :width: 200px
+   :height: 600px
+   :width: 800px
    :scale: 50
    :align: center
 
