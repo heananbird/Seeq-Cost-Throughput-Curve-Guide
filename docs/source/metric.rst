@@ -1,6 +1,20 @@
 Calculation Metric
 ==================
 
+Asset Diagram:
+--------------
+
+.. image:: asset_diagram.png
+   :alt: optional alt text
+   :height: 300px
+   :width: 200px
+   :scale: 50
+   :align: center
+
+.. note::
+
+   Visual Representation of Seeq Foam Production Asset Group Hierarchy
+
 There are 8 calculated metrics that are derived from 11 tag signals. The original 11 tag signals are:
 
 #. Feeder_1_PV
@@ -147,18 +161,3 @@ A discrete value that represents the Total Cost/Production Run divided by the Bo
    //Divide the total cost of each production run by the Board Ft of each production run
    //Total Cost / Production Run ($tcpr) // Board Ft/ Production Run ($bftpr)
    '$tcpr/$bftpr'
-
-
-Asset Diagram:
---------------
-
-.. image:: asset_diagram.png
-   :alt: optional alt text
-   :height: 300px
-   :width: 200px
-   :scale: 50
-   :align: center
-
-.. note::
-
-   This is a test image.
