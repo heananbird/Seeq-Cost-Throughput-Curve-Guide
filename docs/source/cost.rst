@@ -1,6 +1,15 @@
 Usage
 =====
 
+.. jupyter-execute::
+
+    import ipyvuetify as v
+
+    my_select = v.Select(
+        label='Fruits',
+        items=['Apple', 'Pear', 'Cherry'])
+    my_select
+
 .. _installation:
 
 Installation
