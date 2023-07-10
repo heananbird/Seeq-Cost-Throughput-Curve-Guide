@@ -152,7 +152,7 @@ A discrete value that represents the Total Cost/Production Run divided by the Bo
 Asset Diagram:
 --------------
 
-.. image:: /path/to/your/image.png
+.. image:: asset_diagram.png
    :alt: optional alt text
    :height: 300px
    :width: 200px
