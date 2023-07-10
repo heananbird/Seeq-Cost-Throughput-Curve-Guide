@@ -50,5 +50,6 @@ Contents
 
 .. toctree::
 
-   usage
-   api
+   metric
+   cost
+   potential
