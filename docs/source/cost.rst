@@ -25,6 +25,13 @@ Creating recipes
 ----------------
 
 To retrieve a list of random ingredients,
+
+.. jupyter-execute::
+
+  name = 'world'
+  print('hello ' + name + '!')
+
+
 you can use the ``lumache.get_random_ingredients()`` function:
 
 .. autofunction:: lumache.get_random_ingredients
@@ -40,4 +47,9 @@ For example:
 >>> import lumache
 >>> lumache.get_random_ingredients()
 ['shells', 'gorgonzola', 'parsley']
+
+.. jupyter-execute::
+
+  name = 'world'
+  print('hello ' + name + '!')
 
