@@ -1,17 +1,49 @@
 Cost Curve Documentation
-===================================
+========================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+This documentation outlines the analytic process used to create metrics to measure the cost and throughput from XPS production lines across the company.
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+Metric Calculations
+-------------------
+
+The calculation process and relevant tags can be found in :doc:`Metric Calculation <metrics>`. 
+
+Cost Throughput Curves
+----------------------
+
+The Cost Throughput Curve addon user guide can be found in :doc:`Cost Throughput Curve <cost>`. This addon uses the calculated metrics to provide a graphic representation about the current and past performance of lines when compared against their cost and throughput.
+
+.. image:: /path/to/your/image.png
+   :alt: optional alt text
+   :height: 300px
+   :width: 200px
+   :scale: 50
+   :align: center
 
 .. note::
 
-   This project is under active development.
+   The above chart is interactive.
+
+Potential Gain
+--------------
+
+The Potential Gain addon user guide can be found in :doc:`Potential Gain <potential>`. This add-on outlines the cheapest, average, total production, and potential cost gain if all plants where performing at the average of **"best in class"** foam production performance.
+
+.. image:: /path/to/your/second/image.png
+   :alt: optional alt text
+   :height: 300px
+   :width: 200px
+   :scale: 50
+   :align: center
+
+.. note::
+
+   The above table is interactive.
+
+The Code
+--------
+
+The code for the add-on implementation can be found both on the `GitHub <https://github.com/your-repo>`_ or in active development on the `Seeq Data Lab System <https://seeq.com/your-page>`_
 
 Contents
 --------
