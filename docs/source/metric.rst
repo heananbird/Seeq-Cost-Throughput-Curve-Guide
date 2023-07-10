@@ -31,7 +31,7 @@ There are 8 calculated metrics that are derived from 11 tag signals. The origina
 #. Tunnel_Vacuum_PV
 
 .. note::
-   Blowing agent signals may be included in the future
+   Blowing agent signals are currently included in asset hierarchy but lack of signals across production lines pose issues with adoption into calculation       hierarchy
 
 Each of the tags was pulled from each line and separate calculations were performed to get the following metrics:
 
