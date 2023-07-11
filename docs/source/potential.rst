@@ -117,7 +117,7 @@ Date Selection
 
 Date Selection is split into two parts:
 
--Start/End Date: Where dates of interest in MM/DD/YYYY Format are placed
+# Start/End Date: Where dates of interest in MM/DD/YYYY Format are placed
 
 .. jupyter-execute::
     :hide-code:
@@ -144,7 +144,7 @@ Date Selection is split into two parts:
 
     app
 
--Get Dates Button: When clicked new data is drawn for stored data and tables are updated 
+# Get Dates Button: When clicked new data is drawn for stored data and tables are updated 
 
 .. jupyter-execute::
     :hide-code:
