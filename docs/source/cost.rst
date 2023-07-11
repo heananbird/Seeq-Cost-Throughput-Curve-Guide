@@ -47,26 +47,25 @@ The overall layout of the Potental Gain Add-On looks like this.
                 label="Select Thickness",
                 items= ['Thickness 1', 'Thickness 2', 'Thickness 3', 'Thickness 4'],
                 v_model="",
-                multiple=True,
-            )
+                multiple=True)
+
     x_axis = v.Select(
                 label='X Axis',
                 items= ['Variable 1','Variable 2', 'Variable 3'],
                 v_model='Variable 1',
-                multiple=False,
-            )
+                multiple=False)
+
     y_axis = v.Select(
                 label='Y Axis',
                 items= ['Variable 1','Variable 2', 'Variable 3'],
                 v_model='Variable 2',
-                multiple=False,
-            )
+                multiple=False)
+
     z_axis = v.Select(
                 label='Z Axis',
                 items= ['Variable 1','Variable 2', 'Variable 3'],
                 v_model='Variable 3',
-                multiple=False,
-            )
+                multiple=False)
     
     toggle3D = v.Switch(label='3D Chart', v_model=False)
     
@@ -153,11 +152,11 @@ There are three axis on which to display data, upon loading the add-on the defau
 .. jupyter-execute::
     :hide-code:
     x_axis = v.Select(
-                label='X Axis',
-                items= ['Variable 1','Variable 2', 'Variable 3'],
-                v_model='Variable 1',
-                multiple=False,
-            )
+            label='X Axis',
+            items= ['Variable 1','Variable 2', 'Variable 3'],
+            v_model='Variable 1',
+            multiple=False,
+        )
     y_axis = v.Select(
                 label='Y Axis',
                 items= ['Variable 1','Variable 2', 'Variable 3'],
