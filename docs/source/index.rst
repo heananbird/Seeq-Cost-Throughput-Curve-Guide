@@ -46,12 +46,12 @@ The Potential Gain addon user guide can be found in :doc:`Potential Gain <potent
         {'headerName': 'Variable 3', 'field': 'Variable 4', 'sortable': True},
         {'headerName': 'Line', 'field': 'Line', 'sortable': True},
         {'headerName': 'Production Variable', 'field': 'Production Variable', 'sortable': True}
-    ],
-    'enableSorting': True,
-    'enableFilter': True,
-    'enableColResize': True, 
-    'enableRangeSelection': True
-}
+        ],
+        'enableSorting': True,
+        'enableFilter': True,
+        'enableColResize': True, 
+        'enableRangeSelection': True
+    }
 
     grid = Grid(grid_data=df, grid_options=grid_options)
 
