@@ -15,13 +15,13 @@ The overall layout of the Potental Gain Add-On looks like this.
                             hint="MM/DD/YYYY format", 
                             persistent_hint=True, 
                             prepend_icon='event', 
-                            v_model=sdate.strftime('%m/%d/%Y'))  
+                            v_model='03/02/2022')
     
     date_text2 = v.TextField(label="End Date", 
                              hint="MM/DD/YYYY format", 
                              persistent_hint=True, 
                              prepend_icon='event', 
-                             v_model=edate.strftime('%m/%d/%Y'))
+                             v_model='04/07/2023')
     
     # Button and dialog
     dialog = v.Dialog(v_model=False, children=[
@@ -30,14 +30,14 @@ The overall layout of the Potental Gain Add-On looks like this.
     
     line_selector = v.Select(
                 label="Select Lines",
-                items=[line for line in list_of_line_strings],
+                items=['Line 1', 'Line 2', 'Line 3', 'Line 4'],
                 v_model="",
                 multiple=True,
             )
     
     parameter_selector = v.Select(
                 label="Select Parameter",
-                items=['Cheapest Cost/Board Ft','Average Cost/Board Ft','Total Production','Best Case Potential Savings','Average Case Potential Savings'],
+                items=['Fast','Slow','Quick','Top','Bottom'],
                 v_model="",
                 multiple=True,
             )
@@ -49,7 +49,7 @@ The overall layout of the Potental Gain Add-On looks like this.
                     children=["User Guide"]
                 )
     
-    togglesteady = v.Switch(label='Steady State', v_model=True)
+    togglesteady = v.Switch(label='In', v_model=True)
     
     results_container = v.Container(fluid=True, children=["Results and visualizations will be displayed here"])
     results_container.children = [output]
