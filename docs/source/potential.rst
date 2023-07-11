@@ -1,8 +1,9 @@
 Potential Gain Add-On
 =====
 
+------
 Layout
-------------
+------
 
 The overall layout of the Potental Gain Add-On looks like this.
 
