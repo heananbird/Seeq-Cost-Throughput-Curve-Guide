@@ -49,7 +49,7 @@ The overall layout of the Potental Gain Add-On looks like this.
                     children=["User Guide"]
                 )
     
-    togglesteady = v.Switch(label='In', v_model=True)
+    togglesteady = v.Switch(label='Steady State', v_model=True)
     
     results_container = v.Container(fluid=True, children=["Results and visualizations will be displayed here"])
     
@@ -75,34 +75,95 @@ The overall layout of the Potental Gain Add-On looks like this.
 
     app
 
-Creating recipes
+Line Selection
 ----------------
 
-To retrieve a list of random ingredients,
+To select data from a group of lines, click "Select Lines" and pick the one or multiple lines of imterest.
 
 .. jupyter-execute::
+    :hide-code:
 
-  name = 'world'
-  print('hello ' + name + '!')
+    line_selector = v.Select(
+                label="Select Lines",
+                items=['Line 1', 'Line 2', 'Line 3', 'Line 4'],
+                v_model="",
+                multiple=True,
+            )
 
+    app = v.Layout(line_selector)
 
-you can use the ``lumache.get_random_ingredients()`` function:
+    app
 
-.. autofunction:: lumache.get_random_ingredients
+Parameter Selector
+-------------------
 
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
-
-.. autoexception:: lumache.InvalidKindError
-
-For example:
-
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
+To select a single parameter metric or multiple, click "Select Parameters" and pick one or multiple of interest.
 
 .. jupyter-execute::
+    :hide-code:
 
-  name = 'world'
-  print('hello ' + name + '!')
+    parameter_selector = v.Select(
+            label="Select Parameter",
+            items=['Fast','Slow','Quick','Top','Bottom'],
+            v_model="",
+            multiple=True,
+        )
+    app = v.Layout(parameter_selector)
+
+    app
+
+.. note::
+    Data table will now appear, as you adjust the values in Parameter Selector and Line Selection the table will auto-update.
+
+Date Selection
+--------------
+
+Date Selection is split into two parts:
+
+-Start/End Date: Where dates of interest in MM/DD/YYYY Format are placed
+
+.. jupyter-execute::
+    :hide-code:
+
+    date_text = v.TextField(label="Start Date", 
+                            hint="MM/DD/YYYY format", 
+                            persistent_hint=True, 
+                            prepend_icon='event', 
+                            v_model='03/02/2022')
+    
+    date_text2 = v.TextField(label="End Date", 
+                             hint="MM/DD/YYYY format", 
+                             persistent_hint=True, 
+                             prepend_icon='event', 
+                             v_model='04/07/2023')
+
+    app = v.Layout(children=[v.Row(v.Col(cols="4", children=[date_text]),v.Col(cols="4", children=[date_text2]))])
+
+    app
+
+-Get Dates Button: When clicked new data is drawn for stored data and tables are updated 
+
+.. jupyter-execute::
+    :hide-code:
+
+    dialog = v.Dialog(v_model=False, children=[
+        v.Btn(slot="activator", color="primary", children=["Get Dates"])
+        ])
+
+    app = v.Layout(dialog)
+
+    app
+
+State Selector
+-------------------
+
+Data is split into stead state processes (greater than 4 hours) and transient state process (less than 4 hours). Using this toggle the two groups of data can be transitioned back and forth.
+
+.. jupyter-execute::
+    :hide-code:
+
+    togglesteady = v.Switch(label='Steady State', v_model=True)
+
+    app = v.Layout(togglesteady)
+
+    app
