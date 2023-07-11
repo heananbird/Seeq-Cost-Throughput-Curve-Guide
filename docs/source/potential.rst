@@ -1,10 +1,10 @@
 Potential Gain Add-On
 =====
 
-Layout - Update
+Layout
 ******
 
-The overall layout of the Potental Gain Add-On looks like this. Updated?
+The overall layout of the Potental Gain Add-On looks like this.
 
 .. jupyter-execute::
     :hide-code:
