@@ -99,7 +99,7 @@ The overall layout of the Potental Gain Add-On looks like this.
     ])
 
     app
-|
+
 Line Selection
 --------------
 
@@ -118,7 +118,7 @@ To select data from a group of lines, click "Select Lines" and pick the one or m
     app = v.Layout(children=[line_selector])
 
     app
-|
+
 Grade And Thickness Selection
 -------------------
 
@@ -143,7 +143,7 @@ To Filter the data by thickness or grade, a specific or multiple thicknesses or 
     app = v.Layout(children=[grade_selector, thickness_selector])
 
     app
-|
+
 Axis Selection
 --------------
 
@@ -173,7 +173,7 @@ There are three axis on which to display data, upon loading the add-on the defau
     app = v.Layout(children=[x_axis, y_axis, z_axis])
 
     app
-|
+
 To view data in three axis the 3D Chart toggle can be activated.
 
 .. jupyter-execute::
@@ -189,7 +189,7 @@ To view data in three axis the 3D Chart toggle can be activated.
 
     It can be difficult to understand data shown in 3D when many lines, thickness, and grades are present. It is reccomened to narrow the search field before applying a dimnesional increase.
 
-|
+
 Date Selection
 --------------
 
@@ -215,7 +215,7 @@ Date Selection is split into two parts:
     app = v.Layout(children=[v.Row(v.Col(cols="4", children=[date_text]),v.Col(cols="4", children=[date_text2]))])
 
     app
-|
+
 -Get Dates Button: When clicked new data is drawn for stored data and tables are updated 
 
 .. jupyter-execute::
@@ -228,7 +228,7 @@ Date Selection is split into two parts:
     app = v.Layout(children=[dialog])
 
     app
-|
+
 State Selector
 -------------------
 
