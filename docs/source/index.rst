@@ -37,7 +37,8 @@ The Potential Gain addon user guide can be found in :doc:`Potential Gain <potent
 .. jupyter-execute::
     :hide-code:
 
-    from ipyaggrid import grid
+    from ipyaggrid import Grid
+
     grid = Grid(grid_data=df)
 
     grid
