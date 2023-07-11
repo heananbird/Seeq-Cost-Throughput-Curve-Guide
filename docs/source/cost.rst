@@ -244,7 +244,7 @@ Date Selection is split into two parts:
 -----
 
 State Selector
--------------------
+--------------
 
 Data is split into stead state processes (greater than 4 hours) and transient state process (less than 4 hours). Using this toggle the two groups of data can be transitioned back and forth.
 
