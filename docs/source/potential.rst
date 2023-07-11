@@ -75,7 +75,7 @@ The overall layout of the Potental Gain Add-On looks like this.
 
     app
 
-Line Selection
+Line Selection - Update?
 ----------------
 
 To select data from a group of lines, click "Select Lines" and pick the one or multiple lines of imterest.
