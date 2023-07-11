@@ -1,5 +1,5 @@
 Potential Gain Add-On
-=====
+=====================
 
 Layout
 ******
@@ -94,7 +94,7 @@ To select data from a group of lines, click "Select Lines" and pick the one or m
 -----
 
 Parameter Selector
--------------------
+------------------
 
 To select a single parameter metric or multiple, click "Select Parameters" and pick one or multiple of interest.
 
@@ -122,7 +122,7 @@ Date Selection
 
 Date Selection is split into two parts:
 
-# Start/End Date: Where dates of interest in MM/DD/YYYY Format are placed
+#. Start/End Date: Where dates of interest in MM/DD/YYYY Format are placed
 
 .. jupyter-execute::
     :hide-code:
@@ -149,7 +149,7 @@ Date Selection is split into two parts:
 
     app
 
-# Get Dates Button: When clicked new data is drawn for stored data and tables are updated 
+#. Get Dates Button: When clicked new data is drawn for stored data and tables are updated 
 
 .. jupyter-execute::
     :hide-code:
@@ -165,7 +165,7 @@ Date Selection is split into two parts:
 -----
 
 State Selector
--------------------
+--------------
 
 Data is split into stead state processes (greater than 4 hours) and transient state process (less than 4 hours). Using this toggle the two groups of data can be transitioned back and forth.
 
