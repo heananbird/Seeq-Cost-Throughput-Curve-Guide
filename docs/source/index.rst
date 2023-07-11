@@ -10,17 +10,18 @@ The Cost Throughput Curve addon user guide can be found in :doc:`Cost Throughput
 
 .. jupyter-execute::
     :hide-code:
-   import plotly.express as px
-   df = px.data.iris()
-   replacement_dict = {'setosa': 'Line 1', 'versicolor': 'Line 2', 'virginica': 'Line 3'}
-   df['species'] = df['species'].replace(replacement_dict)
-   df = df.rename(columns={'sepal_width':'Variable 1'})
-   df = df.rename(columns={'sepal_length':'Variable 2'})
-   df = df.rename(columns={'petal_length':'Variable 3'})
-   
-   fig = px.scatter(df, x="Variable 1", y="Variable 2", color="species",
+
+    import plotly.express as px
+    df = px.data.iris()
+    replacement_dict = {'setosa': 'Line 1', 'versicolor': 'Line 2', 'virginica': 'Line 3'}
+    df['species'] = df['species'].replace(replacement_dict)
+    df = df.rename(columns={'sepal_width':'Variable 1'})
+    df = df.rename(columns={'sepal_length':'Variable 2'})
+    df = df.rename(columns={'petal_length':'Variable 3'})
+    
+    fig = px.scatter(df, x="Variable 1", y="Variable 2", color="species",
                     size='Variable 3', hover_data=['petal_width'])
-   fig.show()
+    fig.show()
 
 .. note::
 
