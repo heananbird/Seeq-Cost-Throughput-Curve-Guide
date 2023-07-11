@@ -3,10 +3,6 @@ Cost Curve Documentation
 
 This documentation outlines the analytic process used to create metrics to measure the cost and throughput from XPS production lines across the company.
 
-Metric Calculations
--------------------
-
-The calculation process and relevant tags can be found in :doc:`Metric Calculation <metrics>`. 
 
 Cost Throughput Curves
 ----------------------
@@ -50,6 +46,5 @@ Contents
 
 .. toctree::
 
-   metric
    cost
    potential
