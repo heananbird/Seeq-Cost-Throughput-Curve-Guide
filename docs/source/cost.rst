@@ -179,7 +179,7 @@ There are three axis on which to display data, upon loading the add-on the defau
 
     app
 
-To view data in three axis the 3D Chart toggle can be activated.
+**To view data in three axis the 3D Chart toggle can be activated.**
 
 .. jupyter-execute::
     :hide-code:
