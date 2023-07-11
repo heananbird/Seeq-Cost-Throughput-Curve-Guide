@@ -2,6 +2,7 @@ Usage
 =====
 
 .. jupyter-execute::
+    :hide-code:
 
     import ipyvuetify as v
 
