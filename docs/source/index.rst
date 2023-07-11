@@ -1,4 +1,4 @@
-Cost Curve Documentation - Test
+Cost Curve User Guide Documentation
 ========================
 
 This documentation outlines user guide to use the Cost Throughput Curves and Potential Gain add-ons
@@ -17,7 +17,7 @@ The Cost Throughput Curve addon user guide can be found in :doc:`Cost Throughput
 
 .. note::
 
-   The above chart is interactive.
+   The Jupyter Notebook for this add on can be found here https://owenscorning.seeq.site/data-lab/04F36E78-6B4E-43A5-A39F-65268550842D/notebooks/Active_Development/Adjust%20BA%20For%20All%20Three%20Possibilities.ipynb
 
 Potential Gain
 --------------
@@ -33,12 +33,7 @@ The Potential Gain addon user guide can be found in :doc:`Potential Gain <potent
 
 .. note::
 
-   The above table is interactive.
-
-The Code
---------
-
-The code for the add-on implementation can be found on in the `Seeq Data Lab System <https://seeq.com/your-page>`_
+   The Jupyter Notebook for this add on can be found here https://owenscorning.seeq.site/data-lab/04F36E78-6B4E-43A5-A39F-65268550842D/notebooks/Active_Development/Table%20View%20Add%20On.ipynb
 
 Contents
 --------
