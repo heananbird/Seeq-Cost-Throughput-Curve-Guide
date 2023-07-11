@@ -34,12 +34,13 @@ Potential Gain
 
 The Potential Gain addon user guide can be found in :doc:`Potential Gain <potential>`. This add-on outlines potential improvement of products for performing at the average or **"best in class"** performance.
 
-.. image:: /path/to/your/second/image.png
-   :alt: optional alt text
-   :height: 300px
-   :width: 200px
-   :scale: 50
-   :align: center
+.. jupyter-execute::
+    :hide-code:
+
+    from ipyaggrid import grid
+    grid = Grid(grid_data=df)
+
+    grid
 
 .. note::
 
