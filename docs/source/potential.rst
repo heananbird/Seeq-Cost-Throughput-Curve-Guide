@@ -118,25 +118,6 @@ Date Selection is split into two parts:
 
 -Start/End Date: Where dates of interest in MM/DD/YYYY Format are placed
 
-.. jupyter-execute::
-    :hide-code:
-
-    date_text = v.TextField(label="Start Date", 
-                            hint="MM/DD/YYYY format", 
-                            persistent_hint=True, 
-                            prepend_icon='event', 
-                            v_model='03/02/2022')
-    
-    date_text2 = v.TextField(label="End Date", 
-                             hint="MM/DD/YYYY format", 
-                             persistent_hint=True, 
-                             prepend_icon='event', 
-                             v_model='04/07/2023')
-
-    app = v.Layout(children=[v.Row(v.Col(cols="4", children=[date_text]),v.Col(cols="4", children=[date_text2]))])
-
-    app
-
 -Get Dates Button: When clicked new data is drawn for stored data and tables are updated 
 
 .. jupyter-execute::
