@@ -90,7 +90,7 @@ To select data from a group of lines, click "Select Lines" and pick the one or m
                 multiple=True,
             )
 
-    app = v.Layout(line_selector)
+    app = v.Layout(children=[line_selector])
 
     app
 
@@ -108,7 +108,7 @@ To select a single parameter metric or multiple, click "Select Parameters" and p
             v_model="",
             multiple=True,
         )
-    app = v.Layout(parameter_selector)
+    app = v.Layout(children=[parameter_selector])
 
     app
 
@@ -150,7 +150,7 @@ Date Selection is split into two parts:
         v.Btn(slot="activator", color="primary", children=["Get Dates"])
         ])
 
-    app = v.Layout(dialog)
+    app = v.Layout(children=[dialog])
 
     app
 
@@ -164,6 +164,6 @@ Data is split into stead state processes (greater than 4 hours) and transient st
 
     togglesteady = v.Switch(label='Steady State', v_model=True)
 
-    app = v.Layout(togglesteady)
+    app = v.Layout(children=[togglesteady])
 
     app
