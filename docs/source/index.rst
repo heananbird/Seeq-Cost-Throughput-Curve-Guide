@@ -18,9 +18,11 @@ The Cost Throughput Curve addon user guide can be found in :doc:`Cost Throughput
     df = df.rename(columns={'sepal_width':'Variable 1'})
     df = df.rename(columns={'sepal_length':'Variable 2'})
     df = df.rename(columns={'petal_length':'Variable 3'})
+    df = df.rename(columns={'species':'Line'})
+    df= df.rename(columns={'petal_width':'Production Variable'})
     
-    fig = px.scatter(df, x="Variable 1", y="Variable 2", color="species",
-                    size='Variable 3', hover_data=['petal_width'])
+    fig = px.scatter(df, x="Variable 1", y="Variable 2", color="Line",
+                    size='Variable 3', hover_data=['Production Variable'])
     fig.show()
 
 .. note::
