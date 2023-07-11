@@ -1,2 +1,3 @@
+ipyvuetify
 jupyter_sphinx
 nbsphinx
