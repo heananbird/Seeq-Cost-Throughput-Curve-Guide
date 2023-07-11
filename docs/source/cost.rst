@@ -2,7 +2,7 @@ Cost Throughput Curve Add On
 ============================
 
 ------
-Layout - Update?
+Layout
 ------
 
 The overall layout of the Potental Gain Add-On looks like this.
