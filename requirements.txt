@@ -1,3 +1,4 @@
+pandas
 plotly
 ipyvuetify
 jupyter_sphinx
