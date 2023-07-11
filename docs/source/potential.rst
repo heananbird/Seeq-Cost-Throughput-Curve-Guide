@@ -134,7 +134,13 @@ Date Selection is split into two parts:
                              prepend_icon='event',
                              v_model='04/07/2023')
 
-    app = v.Layout(children=[v.Row(v.Col(cols="4", children=[date_text]),v.Col(cols="4", children=[date_text2]))])
+    app = v.Layout(children=[
+                v.Row(children=[
+                    v.Col(cols="4", children=[date_text]),
+                    v.Col(cols="4", children=[date_text2])
+                    ])
+                            ]
+                    )
 
     app
 
