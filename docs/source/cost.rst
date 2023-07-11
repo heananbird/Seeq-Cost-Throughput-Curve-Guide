@@ -193,9 +193,6 @@ Date Selection is split into two parts:
 
 -Start/End Date: Where dates of interest in MM/DD/YYYY Format are placed
 
-.. jupyter-execute::
-    :hide-code:
-
     date_text = v.TextField(label="Start Date", 
                             hint="MM/DD/YYYY format", 
                             persistent_hint=True, 
