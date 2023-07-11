@@ -93,3 +93,24 @@ To select data from a group of lines, click "Select Lines" and pick the one or m
     app = v.Layout(children=[line_selector])
 
     app
+
+Parameter Selector
+-------------------
+
+To select a single parameter metric or multiple, click "Select Parameters" and pick one or multiple of interest.
+
+.. jupyter-execute::
+    :hide-code:
+
+    parameter_selector = v.Select(
+            label="Select Parameter",
+            items=['Fast','Slow','Quick','Top','Bottom'],
+            v_model="",
+            multiple=True,
+        )
+    app = v.Layout(children=[parameter_selector])
+
+    app
+
+.. note::
+    Data table will now appear, as you adjust the values in Parameter Selector and Line Selection the table will auto-update.
