@@ -74,3 +74,22 @@ The overall layout of the Potental Gain Add-On looks like this.
     )
 
     app
+
+Line Selection
+----------------
+
+To select data from a group of lines, click "Select Lines" and pick the one or multiple lines of imterest.
+
+.. jupyter-execute::
+    :hide-code:
+
+    line_selector = v.Select(
+                label="Select Lines",
+                items=['Line 1', 'Line 2', 'Line 3', 'Line 4'],
+                v_model="",
+                multiple=True,
+            )
+
+    app = v.Layout(children=[line_selector])
+
+    app
