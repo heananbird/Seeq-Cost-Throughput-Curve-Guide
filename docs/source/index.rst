@@ -1,5 +1,5 @@
 Cost Curve User Guide Documentation
-========================
+===================================
 
 This documentation outlines user guide to use the Cost Throughput Curves and Potential Gain add-ons
 
