@@ -151,6 +151,7 @@ There are three axis on which to display data, upon loading the add-on the defau
 
 .. jupyter-execute::
     :hide-code:
+
     x_axis = v.Select(
         label='X Axis',
         items= ['Variable 1','Variable 2', 'Variable 3'],
@@ -177,6 +178,7 @@ To view data in three axis the 3D Chart toggle can be activated.
 
 .. jupyter-execute::
     :hide-code:
+
     toggle3D = v.Switch(label='3D Chart', v_model=False)
 
     app = v.Layout(children=[toggle3D])
@@ -222,6 +224,8 @@ Date Selection is split into two parts:
 
     app
 
+|
+|
 State Selector
 -------------------
 
