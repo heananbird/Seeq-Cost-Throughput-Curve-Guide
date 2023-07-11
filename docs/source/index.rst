@@ -39,7 +39,19 @@ The Potential Gain addon user guide can be found in :doc:`Potential Gain <potent
 
     from ipyaggrid import Grid
 
-    grid_options = {}
+    grid_options = {
+    'columnDefs' : [
+        {'headerName': 'Variable 1', 'field': 'Variable 1', 'sortable': True},
+        {'headerName': 'Variable 2', 'field': 'Variable 2', 'sortable': True},
+        {'headerName': 'Variable 3', 'field': 'Variable 4', 'sortable': True},
+        {'headerName': 'Line', 'field': 'Line', 'sortable': True},
+        {'headerName': 'Production Variable', 'field': 'Production Variable', 'sortable': True}
+    ],
+    'enableSorting': True,
+    'enableFilter': True,
+    'enableColResize': True, 
+    'enableRangeSelection': True
+}
 
     grid = Grid(grid_data=df, grid_options=grid_options)
 
