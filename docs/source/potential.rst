@@ -52,15 +52,9 @@ The overall layout of the Potental Gain Add-On looks like this.
     togglesteady = v.Switch(label='In', v_model=True)
     
     results_container = v.Container(fluid=True, children=["Results and visualizations will be displayed here"])
-    results_container.children = [output]
     
     app = v.Layout(
         children=[
-            v.AppBar(app=True, dark=True, color = '#003057', children=[
-                v.ToolbarTitle(children=['Possible Cost Gain XPS Foam Product']),
-                v.Spacer(),
-                user_guide
-            ]),
             v.Container(fluid=True, class_='pt-10', children=[
                 v.Row(children=[
                     v.Col(children=[
