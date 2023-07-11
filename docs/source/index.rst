@@ -1,13 +1,12 @@
 Cost Curve Documentation
 ========================
 
-This documentation outlines the analytic process used to create metrics to measure the cost and throughput from XPS production lines across the company.
-
+This documentation outlines user guide to use the Cost Throughput Curves and Potential Gain add-ons
 
 Cost Throughput Curves
 ----------------------
 
-The Cost Throughput Curve addon user guide can be found in :doc:`Cost Throughput Curve <cost>`. This addon uses the calculated metrics to provide a graphic representation about the current and past performance of lines when compared against their cost and throughput.
+The Cost Throughput Curve addon user guide can be found in :doc:`Cost Throughput Curve <cost>`. This addon uses the calculated metrics to provide a graphic representation about the current and past performance when compared against their cost and throughput.
 
 .. image:: /path/to/your/image.png
    :alt: optional alt text
@@ -23,7 +22,7 @@ The Cost Throughput Curve addon user guide can be found in :doc:`Cost Throughput
 Potential Gain
 --------------
 
-The Potential Gain addon user guide can be found in :doc:`Potential Gain <potential>`. This add-on outlines the cheapest, average, total production, and potential cost gain if all plants where performing at the average of **"best in class"** foam production performance.
+The Potential Gain addon user guide can be found in :doc:`Potential Gain <potential>`. This add-on outlines potential improvement of products for performing at the average or **"best in class"** performance.
 
 .. image:: /path/to/your/second/image.png
    :alt: optional alt text
@@ -39,7 +38,7 @@ The Potential Gain addon user guide can be found in :doc:`Potential Gain <potent
 The Code
 --------
 
-The code for the add-on implementation can be found both on the `GitHub <https://github.com/your-repo>`_ or in active development on the `Seeq Data Lab System <https://seeq.com/your-page>`_
+The code for the add-on implementation can be found on in the `Seeq Data Lab System <https://seeq.com/your-page>`_
 
 Contents
 --------
