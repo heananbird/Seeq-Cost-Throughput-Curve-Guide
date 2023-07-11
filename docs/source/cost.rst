@@ -1,4 +1,4 @@
-Usage
+Cost Throughput Curve
 =====
 
 .. jupyter-execute::
