@@ -152,29 +152,30 @@ There are three axis on which to display data, upon loading the add-on the defau
 .. jupyter-execute::
     :hide-code:
     x_axis = v.Select(
-            label='X Axis',
-            items= ['Variable 1','Variable 2', 'Variable 3'],
-            v_model='Variable 1',
-            multiple=False,
+        label='X Axis',
+        items= ['Variable 1','Variable 2', 'Variable 3'],
+        v_model='Variable 1',
+        multiple=False,
         )
     y_axis = v.Select(
-                label='Y Axis',
-                items= ['Variable 1','Variable 2', 'Variable 3'],
-                v_model='Variable 2',
-                multiple=False,
-            )
+        label='Y Axis',
+        items= ['Variable 1','Variable 2', 'Variable 3'],
+        v_model='Variable 2',
+        multiple=False,
+    )
     z_axis = v.Select(
-                label='Z Axis',
-                items= ['Variable 1','Variable 2', 'Variable 3'],
-                v_model='Variable 3',
-                multiple=False,
-            )
+        label='Z Axis',
+        items= ['Variable 1','Variable 2', 'Variable 3'],
+        v_model='Variable 3',
+        multiple=False,
+    )
 
     app = v.Layout(children=[x_axis, y_axis, z_axis])
 
     app
 
 To view data in three axis the 3D Chart toggle can be activated.
+
 .. jupyter-execute::
     :hide-code:
     toggle3D = v.Switch(label='3D Chart', v_model=False)
