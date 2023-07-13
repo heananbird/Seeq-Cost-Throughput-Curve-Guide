@@ -186,10 +186,19 @@ Features
 -----
 Excel Download
 --------------
+
 In the right hand corner next to the user guide is a hamburger menu. When this menu is selected a dropdown will display where the Input Values can be updated, updating these values will allow for a Excel file to be downloaded with the production variables data.
 
 .. jupyter-execute::
     :hide-code:
+
+    metric_guide = v.Btn(
+                class_="ma-2",
+                outlined=True,
+                href=str(spy.utils.get_data_lab_project_url(use_private_url=False))+'/files/Active_Development/metrics.pdf',
+                target="_blank",
+                children=["Calculation Guide PDF"]
+            )
 
     user_guide = v.Btn(
                 class_="ma-2",
@@ -231,6 +240,7 @@ In the right hand corner next to the user guide is a hamburger menu. When this m
             v.ToolbarTitle(children=['Title']),
             v.Spacer(),
             hamburger_menu,
+            metric_guide,
             user_guide
         ])])
 
