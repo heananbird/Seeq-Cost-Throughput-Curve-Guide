@@ -178,4 +178,12 @@ Data is split into stead state processes (greater than 4 hours) and transient st
 
     app
 
+-----
 
+Features
+********
+
+-----
+Excel Download
+--------------
+In the right hand corner next to the user guide is a hamburger menu. When this menu is selected a dropdown will display where the Feeder Values can be updated, updating these values will allow for a Excel file to be downloaded with the production variables data.
