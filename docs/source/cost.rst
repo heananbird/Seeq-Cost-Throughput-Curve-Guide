@@ -267,8 +267,29 @@ Excel Download
 --------------
 In the right hand corner next to the user guide is a hamburger menu. When this menu is selected a dropdown will display where the Feeder Values can be updated, updating these values will allow for a Excel file to be downloaded with the production variables data.
 
+..note:
+
+    Loading times & Generating can be long depending on the time length of data being pulled and updated.
+
 -----
 Plot Line Selection
 -------------------
 
 In the if you click the lines in the legend (right hand side) of the plot. Specfic lines can be selected, unselected, or focused by single or double clicking.
+
+.. jupyter-execute::
+    :hide-code:
+
+    import plotly.express as px
+    df = px.data.iris()
+    replacement_dict = {'setosa': 'Line 1', 'versicolor': 'Line 2', 'virginica': 'Line 3'}
+    df['species'] = df['species'].replace(replacement_dict)
+    df = df.rename(columns={'sepal_width':'Variable 1'})
+    df = df.rename(columns={'sepal_length':'Variable 2'})
+    df = df.rename(columns={'petal_length':'Variable 3'})
+    df = df.rename(columns={'species':'Line'})
+    df= df.rename(columns={'petal_width':'Production Variable'})
+    
+    fig = px.scatter(df, x="Variable 1", y="Variable 2", color="Line",
+                    size='Variable 3', hover_data=['Production Variable'])
+    fig.show()
