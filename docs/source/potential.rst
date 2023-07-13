@@ -235,8 +235,7 @@ In the right hand corner next to the user guide is a hamburger menu. When this m
     ])
     
     app = v.Layout(
-    children=[
-        v.AppBar(app=True, dark=True, color = '#003057', children=[
+    children=[v.Row(children=[
             v.ToolbarTitle(children=['Title']),
             v.Spacer(),
             hamburger_menu,
