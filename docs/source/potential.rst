@@ -187,3 +187,7 @@ Features
 Excel Download
 --------------
 In the right hand corner next to the user guide is a hamburger menu. When this menu is selected a dropdown will display where the Feeder Values can be updated, updating these values will allow for a Excel file to be downloaded with the production variables data.
+
+..note:
+
+    Loading times & Generating can be long depending on the time length of data being pulled and updated.
