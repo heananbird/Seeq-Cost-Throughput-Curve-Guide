@@ -2,7 +2,7 @@ Cost Throughput Curve Add On
 ============================
 
 Layout
-------
+******
 
 The overall layout of the Potental Gain Add-On looks like this.
 
@@ -256,3 +256,19 @@ Data is split into stead state processes (greater than 4 hours) and transient st
     app = v.Layout(children=[togglesteady])
 
     app
+
+-----
+
+Features
+********
+
+-----
+Excel Download
+--------------
+In the right hand corner next to the user guide is a hamburger menu. When this menu is selected a dropdown will display where the Feeder Values can be updated, updating these values will allow for a Excel file to be downloaded with the production variables data.
+
+-----
+Plot Line Selection
+-------------------
+
+In the if you click the lines in the legend (right hand side) of the plot. Specfic lines can be selected, unselected, or focused by single or double clicking.
