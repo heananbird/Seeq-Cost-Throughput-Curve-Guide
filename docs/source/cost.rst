@@ -270,6 +270,14 @@ In the right hand corner next to the user guide is a hamburger menu. When this m
 .. jupyter-execute::
     :hide-code:
 
+    user_guide = v.Btn(
+                class_="ma-2",
+                outlined=True,
+                href="https://seeq-cost-throughput-curve-guide.readthedocs.io/en/latest/",
+                target="_blank",
+                children=["User Guide"]
+            )
+
     Input_1 = v.TextField(label='Input 1', hint='hint location', persistent_hint=True, v_model='test')
     Input_2 = v.TextField(label='Input 2', hint='hint location', persistent_hint=True, v_model='test')
     Input_3 = v.TextField(label='Input 3', hint='hint location', persistent_hint=True, v_model='test')
