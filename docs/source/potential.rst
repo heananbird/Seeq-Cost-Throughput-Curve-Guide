@@ -186,7 +186,47 @@ Features
 -----
 Excel Download
 --------------
-In the right hand corner next to the user guide is a hamburger menu. When this menu is selected a dropdown will display where the Feeder Values can be updated, updating these values will allow for a Excel file to be downloaded with the production variables data.
+In the right hand corner next to the user guide is a hamburger menu. When this menu is selected a dropdown will display where the Input Values can be updated, updating these values will allow for a Excel file to be downloaded with the production variables data.
+
+.. jupyter-execute::
+    :hide-code:
+
+    Input_1 = v.TextField(label='Input 1', hint='hint location', persistent_hint=True, v_model='test')
+    Input_2 = v.TextField(label='Input 2', hint='hint location', persistent_hint=True, v_model='test')
+    Input_3 = v.TextField(label='Input 3', hint='hint location', persistent_hint=True, v_model='test')
+
+    excel_button = v.Btn(children=['Generate'])
+
+    # Hamburger menu button
+    hamburger_button = v.AppBarNavIcon(v_on='menuData.on')
+
+    menu_items = [
+        v.Col(children=[
+                Input_1,
+                Input_2,
+                Input_3,
+                v.Row(children=[v.Spacer(),excel_button,v.Spacer()])
+        ])
+    ]
+
+    hamburger_menu = v.Menu(offset_y=True, close_on_content_click=False, v_slots=[{
+        'name': 'activator',
+        'variable': 'menuData',
+        'children': hamburger_button,
+    }], children=[
+        v.List(children=menu_items)
+    ])
+    
+    app = v.Layout(
+    children=[
+        v.AppBar(app=True, dark=True, color = '#003057', children=[
+            v.ToolbarTitle(children=['Title']),
+            v.Spacer(),
+            hamburger_menu,
+            user_guide
+        ])])
+
+    app
 
 ..note:
 
